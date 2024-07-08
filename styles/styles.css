@@ -67,14 +67,16 @@ body {
   color: #ffffff;
   background-color: rgba(117, 97, 87, 1);
   width: 160px;
-  min-height: 36px;
-  text-align: center;
+ height: fit-content;
   text-transform: uppercase;
   margin-left: -35px;
   line-height: 20px;
   font-size: 16px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
+  margin-top: 14px;
+  margin-bottom: 18px;
+  min-height: 36px;
 }
 
 .navigation-button:focus,
@@ -144,9 +146,17 @@ body {
   background-repeat: no-repeat;
   list-style-type: none;
 }
+.hotels-container {
+  margin-left: 67px;
+  min-width: 1060px;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin-top: 47px;
+}
+
 .hotels-card-title{
-  margin-left: -87px;
-  margin-top: 12px;
+  margin-left: -88px;
+  margin-top: 10px;
   margin-bottom: 15px;
   font-size: 24px;
   line-height: 28px;
@@ -189,7 +199,7 @@ body {
   width: 1200px;
   min-height: 49px;
   margin-bottom: -10px;
-margin-top: -179px;
+
   margin-left: 74px;
 }
 
@@ -236,16 +246,16 @@ margin-top: -179px;
 .navigation {
   display: flex;
   width: 1200px;
-  align-items: center;
-  min-height: 100%;
+
+
 }
 
 .navigation a {
   display: flex;
-  align-items: center;
+
   color: #000000;
   z-index: 2;
-  min-height: 100%;
+
 }
 
 .navigation-list {
@@ -255,11 +265,11 @@ margin-top: -179px;
   padding: 0;
   justify-content: space-between;
   list-style-type: none;
-  width: 340px;
-  align-items: center;
+  min-width: 340px;
+margin-left: 2px;
   line-height: 24px;
   font-size: 20px;
-  font-family: "PT Sans";
+  font-family: "PT Sans Narrow", sans-serif;
   font-weight: 700;
 }
 
@@ -268,6 +278,7 @@ margin-top: -179px;
   text-decoration: none;
   font-weight: 700px;
   text-align: center;
+  padding: 20px 16px;
 }
 
 
@@ -286,8 +297,9 @@ margin-top: -179px;
 
 
 .navigation-item {
-  padding: 0 16px;
+
   position: relative;
+  max-width: 125px;
 }
 
 .navigation-bloсk-link-i {
@@ -301,9 +313,9 @@ margin-top: -179px;
 
   content: "";
   position: absolute;
-  left: 14px;
-  width: 70px;
-  bottom: -20px;
+  left: 16px;
+  width: 68px;
+  bottom: 2px;
   min-height:  2px;
   background-color: #040404;
 
@@ -314,8 +326,8 @@ margin-top: -179px;
   position: absolute;
   left: 14px;
   width: 92px;
-  bottom: -22px;
-  height: 2px;
+  bottom: 0;
+  min-height: 2px;
   background-color: #040404;
 
 }
@@ -331,14 +343,15 @@ margin-top: -179px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin-left: 120px;
+  margin-left: 119px;
+  margin-top:25px;
   list-style-type: none;
 }
 
 .notification-badge {
   display: inline-block;
   width: 20px;
-  height: 20px;
+  min-height: 20px;
   line-height: 20px;
   text-align: center;
   border-radius: 50%;
@@ -350,11 +363,7 @@ margin-top: -179px;
   position: absolute;
   top: -14px;
   left: 3px;
-
-
-
-
-
+  height:fit-content;
 }
 
 
@@ -372,8 +381,6 @@ margin-top: -179px;
   transform: translateX(-50%);
 
 }
-
-
 
 .main-container {
   flex-grow: 1;
@@ -401,14 +408,14 @@ margin-top: -179px;
   position: relative;
   background-repeat: no-repeat;
   background-color: #8ac8e2;
-  margin-bottom: 1px;
+  margin-top: -3px;
 }
 
 .hero-welcome-tittle {
   width: 620px;
   text-align: center;
   margin: 0 auto;
-  padding-top: 38px;
+  padding-top: 42px;
   padding-bottom: 88px;
   line-height: 36px;
   font-size: 20px;
@@ -417,7 +424,7 @@ margin-left: 290px;
 }
 
 .home {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -505,20 +512,13 @@ margin-left: 290px;
   position: relative;
   content: "";
   width: 100%;
-  height: 57px;
+  min-height: 57px;
   left: 87px;
   bottom: 113px;
   z-index: 1;
   background-image: url("../images/rectangle-i.svg");
   background-repeat: no-repeat;
 }
-
-
-
-
-
-
-
 
 #icon-clock-view {
   transform: translate(-66px, -1px);
@@ -541,16 +541,10 @@ margin-bottom: 24px;
 
   }
 
-
-
-
-
-
-
 .advantages-discription{
   font-size: 18px;
   line-height: 21px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
 margin-top: 19px;
   }
@@ -558,7 +552,7 @@ margin-top: 19px;
   .advantages-discription-s{
     font-size: 18px;
     line-height: 21px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-weight: 400;
     margin-top: 38px;
     margin-left: -1px;
@@ -567,18 +561,11 @@ margin-top: 19px;
     .advantages-discription-i{
       font-size: 18px;
       line-height: 21px;
-      font-family: "PT Sans";
+      font-family: "PT Sans", sans-serif;
       font-weight: 400;
       margin-top: 38px;
       margin-left: 2px;
       }
-
-
-
-
-
-
-
 
 
 .infrastructure-list {
@@ -645,7 +632,7 @@ margin-top: 19px;
 .infrastructure-title-meal,
 .infrastructure-title-housing {
   padding-top: 93px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   line-height: 28px;
   font-size: 24px;
@@ -654,7 +641,7 @@ margin-top: 19px;
 
 .infrastructure-title-gifts{
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   line-height: 28px;
   font-size: 24px;
@@ -669,8 +656,7 @@ margin-top: 19px;
 
   display: flex;
   text-align: center;
-
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   line-height: 28px;
   font-size: 24px;
@@ -759,16 +745,6 @@ margin-top: 19px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .advantages-item-square,
 .advantages-item-tourist {
 
@@ -798,7 +774,7 @@ margin-top: 19px;
 
 .advantages-title-block {
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -811,14 +787,14 @@ margin-top: 17px;
 
 .infrastructures-title{
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
    font-weight: 700;
 }
 .infrastructure-discription{
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
    font-weight: 400;
@@ -828,7 +804,7 @@ margin-top: 17px;
 
 .infrastructure-discription-i{
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
    font-weight: 400;
@@ -837,8 +813,7 @@ margin-top: 17px;
 }
 
 .following-descrition{
-
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
    font-weight: 400;
@@ -846,7 +821,7 @@ margin-top: 17px;
 
 .following-descrition-i{
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
    font-weight: 400;
@@ -854,22 +829,14 @@ margin-top: 17px;
 }
 
 
-
-
-
-
-
 #user-email{
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
    font-weight: 400;
    border-radius: 4px;
 }
-
-
-
 
 
 
@@ -889,7 +856,7 @@ margin-top: 17px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   margin-top: -3px;
 }
 
@@ -897,7 +864,7 @@ margin-top: 17px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   margin-top: -4px;
   margin-left: -4px;
 margin-bottom: 61px;
@@ -956,7 +923,7 @@ margin-top: -17px;
 }
 .following-i{
   width: 1200px;
-  height: 415px;
+  min-height: 415px;
 
   background-repeat: repeat;
   text-align: center;
@@ -969,20 +936,11 @@ margin-top: -17px;
 text-decoration: none;
 
 }
-
-
-
-
-
-
-
-
-
 .following-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   text-transform: capitalize;
   padding-top: 128px;
   margin-bottom: -2px;
@@ -992,19 +950,12 @@ text-decoration: none;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   text-transform: capitalize;
   padding-top: 97px;
   margin-bottom: -2px;
   color: #ffffff;
 }
-
-
-
-
-
-
-
 
 .hotels-card-price{
   font-size: 18px;
@@ -1012,7 +963,7 @@ text-decoration: none;
     font-weight: 400;
     margin-bottom: 5px;
 
-    margin-right: -2px;
+    margin-right: -23px;
 }
 
 .hotels-card-discription{
@@ -1020,21 +971,11 @@ text-decoration: none;
     line-height: 21px;
     font-weight: 400;
     margin-bottom: 5px;
-    margin-left: 2px;
+    margin-left: 23px;
 
 }
-
-
-
-
-
-
-
-
-
-
 .feedback {
-  height: 52px;
+  max-height: 52px;
   justify-content: center;
   display: flex;
   text-align: center;
@@ -1044,7 +985,6 @@ text-decoration: none;
   text-transform: uppercase;
   margin-top: 56px;
   margin-left: -2px;
-
 
 }
 
@@ -1060,10 +1000,10 @@ text-decoration: none;
   padding: 8px 50px;
   text-decoration: none;
   width: 232px;
-  height: 100%;
   float: right;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   border-radius: 0 4px 4px 0;
+  height: fit-content;
 }
 
 .button-submit:disabled {
@@ -1100,9 +1040,10 @@ text-decoration: none;
   font-size: 15px;
   line-height: 20px;
   font-weight: 600;
-  margin-left: -45px;
+  margin-left: -44px;
   margin-top: 33px;
   padding: 8px 50px;
+  height: fit-content;
 }
 
 .button-hover:focus,
@@ -1142,11 +1083,8 @@ text-decoration: none;
   font-weight: 700;
   margin-left: -43px;
   font-family: "PT Sans";
+  height: fit-content;
 }
-
-
-
-
 
 .button-all:hover,
 .button-all:focus {
@@ -1187,8 +1125,8 @@ text-decoration: none;
   text-align: center;
   text-transform: uppercase;
   align-items: center;
-  margin: 1px;
-  padding: 8px 19px;
+  margin-left: 23px;
+  padding: 8px 17px;
 
 }
 
@@ -1217,7 +1155,7 @@ text-decoration: none;
 
 
 .favorites-button {
-
+  height: fit-content;
   border: none;
   border-radius: 4px;
   color: rgb(250, 248, 247);
@@ -1225,8 +1163,9 @@ text-decoration: none;
   min-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  margin: 0;
-  padding: 9px 19px;
+  margin-right: 16px;
+  padding: 8px 20px;
+  min-width: 104px;
 }
 
 .favorites-button:hover,
@@ -1256,11 +1195,13 @@ text-decoration: none;
   border-radius: 4px;
   color: #ffffff;
   background-color: rgba(125, 181, 79, 1);
-  height: 18px;
+  min-height: 18px;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  padding: 8px 18px;
+  padding: 8px 20px;
+  min-width: 104px;
+  margin-right: 16px;
 
 }
 
@@ -1285,18 +1226,17 @@ text-decoration: none;
 }
 
 .following-from-name {
-  height: 100%;
+  min-height: 100%;
   width: 452px;
 
 
 }
 
 .following-from-name input {
-  border-block-width: 0;
-  height: 100%;
+
+  min-height: 100%;
   width: 452px;
   gap: 260px;
-  padding: 0;
   color: #060606;
   background-color: #e5e5e5;
   border-style: none;
@@ -1304,7 +1244,7 @@ text-decoration: none;
 }
 
 .user-email {
-  height: 52px;
+  max-height: 52px;
 
 }
 
@@ -1345,7 +1285,7 @@ margin-left:-4px;
 }
 
 input.range-input-min {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
    font-weight: 400;
@@ -1354,7 +1294,7 @@ input.range-input-min {
   }
 
   input.range-input-max {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 24px;
      font-weight: 400;
@@ -1362,15 +1302,10 @@ input.range-input-min {
    border-radius: 0 4px 4px 0;
     }
 
-
-
-
-
-
 .page-footer-block {
   display: flex;
   width: 1060px;
-  height: 50px;
+  min-height: 50px;
   margin-top: 65px;
   margin-bottom: 40px;
   justify-content: space-between;
@@ -1387,15 +1322,6 @@ input.range-input-min {
   justify-content: space-between;
   align-items: center;
 }
-
-
-
-
-
-
-
-
-
 
 .footer-social {
   font-family: "PT Sans", sans-serif;
@@ -1485,14 +1411,16 @@ margin-top: 6px;
 .main-inner-header {
   background-image: url(../images/filters.jpeg);
   background-repeat: no-repeat;
-  min-height: 412px;
+height: fit-content;
   margin-bottom: 70px;
+  background-size: cover;
+  min-height: 412px;
 }
 
 .rating-stars-four {
   display: block;
   width: 203px;
-  height: 37px;
+  min-height: 37px;
   background-image: url("../images/star-4.svg");
   background-repeat: no-repeat;
 }
@@ -1500,7 +1428,7 @@ margin-top: 6px;
 .rating-stars-three {
   display: block;
   width: 202px;
-  height: 37px;
+  min-height: 37px;
   background-image: url("../images/star-3.svg");
   background-repeat: no-repeat;
 }
@@ -1508,7 +1436,7 @@ margin-top: 6px;
 .rating-stars-two {
   display: block;
   width: 187px;
-  height: 37px;
+  min-height: 37px;
   background-image: url("../images/star-2.svg");
   background-repeat: no-repeat;
   padding-left: 18px;
@@ -1592,6 +1520,7 @@ display: flex;
   background-image: url("../images/vectorhome.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  height: fit-content;
 
 }
 
@@ -1601,6 +1530,8 @@ display: flex;
   background-image: url("../images/arrow.svg");
   background-size: contain;
   background-repeat: no-repeat;
+
+
 }
 
 .breadcrumbs-link {
@@ -1626,11 +1557,11 @@ display: flex;
   text-decoration: none;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  margin-left: 16px;
+  margin-left: 11px;
 
 }
 .hotels-filter-title-h{
@@ -1638,11 +1569,11 @@ display: flex;
   text-decoration: none;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  margin-left: -11px;
+  margin-left: -18px;
 
 }
 
@@ -1651,23 +1582,12 @@ display: flex;
   text-decoration: none;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  font-size: 20px;
+   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  margin-left: -39px;
+  margin-left: -45px;
 margin-bottom: 26px;
 }
-
-
-
-
-
-
-
-
-
-
 
 .hotels-filter-list {
   color: #ffffff;
@@ -1684,18 +1604,14 @@ margin-bottom: 26px;
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+
   gap: 14px;
 }
-
-
-
 
 .hotels-products {
   display: flex;
   width: 1200px;
 
-  min-height: 412px;
   justify-content: flex-start;
   margin-top: 44px;
 }
@@ -1738,7 +1654,7 @@ margin-bottom: 26px;
   padding: 0;
   list-style-type: none;
   margin-left: 54px;
-  margin-top: 50px;
+  margin-top: 41px;
 
 }
 
@@ -1751,20 +1667,20 @@ margin-bottom: 26px;
   background-color: rgba(130, 179, 211, 1);
   color: #ffffff;
   width: 60px;
-  height: 60px;
+  min-height: 60px;
   text-decoration: none;
   padding: 17px 24.3px;
   box-sizing: border-box;
   line-height: 36px;
   font-weight: 700;
 border-radius: 4px;
-
+height: fit-content;
 }
 .pagination-link-i {
 
   color: #050505;
   width: 60px;
-  height: 60px;
+  min-height: 60px;
   text-decoration: none;
   padding: 17px 23.3px;
   box-sizing: border-box;
@@ -1772,7 +1688,7 @@ border-radius: 4px;
   font-size: 22px;
   font-weight: 700;
 border-radius: 4px;
-
+height: fit-content;
 
 }
 
@@ -1781,7 +1697,7 @@ border-radius: 4px;
   background-color: rgba(130, 179, 211, 1);
   color: #ffffff;
   width: 60px;
-  height: 60px;
+  min-height: 60px;
   text-decoration: none;
   padding: 16px 18.3px;
   box-sizing: border-box;
@@ -1789,15 +1705,23 @@ border-radius: 4px;
   font-weight: 700;
 border-radius: 4px;
 margin-left: -4px;
+height: fit-content;
 }
 
+.hotels-container::after{
 
-
-
-
-
-
-
+position: absolute;
+  content: "";
+  min-width: 1060px;
+border: 1px;
+  left: 70px;
+    z-index: 999;
+  background-image: url("../images/divider.svg");
+  background-color:  rgba(230, 230, 230, 1);
+  background-repeat: no-repeat;
+  min-height: 2px;
+  margin-top: 15px;
+}
 
 /*наведение курсора*/
 .pagination-link:hover {
@@ -1837,7 +1761,7 @@ margin-left: -4px;
 
 .sorting-container {
   width: 292px;
-  height: 49px;
+ min-height: 49px;
   color: #060606;
   margin-left: 77px;
   margin-top: -23px;
@@ -1869,9 +1793,9 @@ margin-left: -4px;
 }
 
 .hotels-item {
-  border: 1px #e6e6e6 solid;
-  padding: 29px;
-  background-color: #ffffff
+  min-width: 340px;
+min-height: 438px;
+ background-color: #ffffff
 
 }
 
@@ -1882,8 +1806,10 @@ margin-left: -4px;
   flex-wrap: wrap;
   color: #000000;
   padding: 0;
- margin-left: 55px;
+
   list-style-type: none;
+  gap: 20px;
+
 }
 
 .hotels-list img {
@@ -1894,7 +1820,7 @@ margin-left: -4px;
 .hotels-card-choice {
   display: flex;
   width: 300px;
-  height: 36px;
+  min-height: 36px;
   justify-content: space-between;
 }
 
@@ -1902,8 +1828,9 @@ margin-left: -4px;
   display: flex;
   width: 175px;
   justify-content: center;
-  padding-top: 7px;
-  padding-left: 5px;  background-color: rgb(210, 204, 204);
+  padding-top: 8px;
+
+  background-color: rgb(210, 204, 204);
   border-radius: 4px;
 }
 
@@ -1912,12 +1839,9 @@ margin-left: -4px;
   width: 300px;
   justify-content: flex-end;
   padding-top: 16px;
-  margin-left: 1px;
+  margin-left: 22px;
 
 }
-
-
-
 
 
 
@@ -1941,10 +1865,11 @@ margin-left: -4px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  width: 1060px;
+  max-width: 1060px;
   min-height: 49px;
   margin-left: -6px;
     margin-top: -16px;
+
 }
 
 
@@ -1958,15 +1883,13 @@ margin-left: -4px;
 }
 
 .hotels-filter-group {
-  padding-left: 40px;
+  margin-left: 40px;
   border: none;
 }
 .hotels-filter-group-c {
-  padding-left: 40px;
+  margin-left: 40px;
   border: none;
 }
-
-
 
 /*
 .range {
@@ -1977,11 +1900,11 @@ margin-left: -4px;
 
 .range-scale {
   position: absolute;
-  height: 4px;
-  margin-top: 38px;
+  min-height: 4px;
+  margin-top: 36px;
   background-color: #fefcfc;
   border-radius: 2px;
-  margin-left: -37px;
+  margin-left: -45px;
 }
 
 .range-bar {
@@ -2052,7 +1975,7 @@ margin-left: -4px;
 padding-left: 21px;
 border: none;
 width: 122px;
-height: 48px;
+min-height: 48px;
 
 }
 .range-input-lable-min {
@@ -2082,7 +2005,7 @@ position: absolute;
 }
 
 .range-box {
-  height: 4px;
+  min-height: 4px;
   position: absolute;
   top: 93px;
   width: 287px;
@@ -2093,15 +2016,8 @@ position: absolute;
   justify-content: center;
   min-height: 48px;
   width: 288px;
-  margin-left: 94px;
+  margin-left: 85px;
 }
-
-
-
-
-
-
-
 /*
 .range-input-max {
   width: 139px;
@@ -2167,20 +2083,21 @@ position: absolute;
   line-height: 23px;
   font-size: 18px;
   font-weight: 400;
-  margin-left: 27px;
-
+  margin-left: 18px;
+  max-width: 100px;
     margin-top: -19px;
 }
 
 .control-i {
   position: relative;
   display: block;
-  padding-left: 36px;
+  padding-left: 38px;
   line-height: 23px;
   font-size: 18px;
   font-weight: 400;
-  margin-left: 26px;
+  margin-left: 17px;
   margin-bottom: 11px;
+  max-width: 100px;
 }
 
 .control-b {
@@ -2190,19 +2107,11 @@ position: absolute;
   line-height: 23px;
   font-size: 18px;
   font-weight: 400;
-  margin-left: 26px;
+  margin-left: 18px;
     margin-bottom: 19px;
     margin-top: 11px;
+    max-width: 100px;
 }
-
-
-
-
-
-
-
-
-
 
 
 /*Mark  */
@@ -2233,7 +2142,7 @@ border-radius: 4px;
   top: 7px;
   left: 2px;
   width: 12px;
-  height: 2px;
+  min-height: 2px;
   background-color: #f9f7f7;
   content: "";
 
@@ -2247,7 +2156,7 @@ border-radius: 4px;
   left: 3px;
   top: 4px;
   width: 10px;
-  height: 5px;
+  min-height: 5px;
   border-radius: 1px;
   border-left: 4px solid #21647b;
   border-bottom: 4px solid #21647b;
@@ -2265,9 +2174,10 @@ border-radius: 4px;
   position: absolute;
   background-color: #ffffff;
   width: 20px;
-  height: 20px;
+  min-height: 20px;
   border-radius: 50%;
   margin-top: 1px;
+  max-width: 100px;
 
 }
 .control-mark-radio {
@@ -2278,7 +2188,7 @@ border-radius: 4px;
  min-height: 20px;
   border-radius: 50%;
   margin-top: 3px;
-
+max-width: 100px;
 }
 
 .control-mark-radio-b {
@@ -2286,60 +2196,41 @@ border-radius: 4px;
   position: absolute;
   background-color: #ffffff;
   width: 20px;
-  height: 20px;
+  min-height: 20px;
   border-radius: 50%;
   margin-top: -1px;
+  max-width: 100px;
 
 }
 
-
-
-
-
-
 .control-radio-b {
-  margin-left: 19px;
+  margin-left: 4px;
   position: relative;
-  line-height: 23px;
   font-size: 18px;
 
 }
 .control-radio-i {
   position: relative;
     display: flex;
-    line-height: 23px;
+
     font-size: 18px;
     font-weight: 400;
-    margin-left: 18px;
+    margin-left: 4px;
     margin-bottom: 27px;
-    margin-top: 11px;
+    margin-top: 9px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .control-radio {
   position: relative;
     display: flex;
 
-    line-height: 23px;
     font-size: 18px;
     font-weight: 400;
-    margin-left: 18px;
+    margin-left: 4px;
     margin-bottom: -40px;
-    margin-top: -26px;
+    margin-top: -25px;
 }
 
 .control-input[type="radio"]:checked + .control-mark-radio::before {
@@ -2347,7 +2238,7 @@ border-radius: 4px;
   top: 5px;
   left: 5px;
   width: 10px;
-  height: 10px;
+  min-height: 10px;
   border-radius: 50%;
   background-color: #4d7e94;
   content: "";
@@ -2415,14 +2306,6 @@ border-radius: 4px;
   fill: #E6E6E6;
 }
 
-.modal-close-button:active svg path {
-  fill: rgba(0, 0, 0, .3);
-}
-
-.modal-close-button:hover {
-  background-color: rgb(99, 34, 34);
-  cursor: pointer;
-}
 
 .modal-close-button:focus {
   background-color: rgba(242, 242, 242, 1);
@@ -2490,7 +2373,7 @@ border-radius: 4px;
 
 .form-message-available {
   color: rgb(7, 7, 7);
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   margin-left: 67px;
 
   font-size: 16px;
@@ -2637,7 +2520,7 @@ border-radius: 4px;
   font-weight: 700;
   border: none;
   background-color: rgba(242, 242, 242, 1);
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   height: 48px;
   width: 420px;
   margin-left: 22px;
@@ -2653,7 +2536,7 @@ border-radius: 4px;
   font-weight: 700;
   border: none;
   background-color: rgba(242, 242, 242, 1);
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   height: 48px;
   width: 420px;
   margin-left: 6px;
@@ -2695,22 +2578,15 @@ border-radius: 4px;
 }
 
 
-
-
-
-
-
-
 #adults {
   width: 31px;
 
   height: 48px;
   border: none;
-
   background-color: rgba(242, 242, 242, 1);
   font-weight: 700;
   font-size: 18px;
-  font-family: 'PT SANS';
+  font-family: "PT Sans", sans-serif;
   text-align: center;
   text-transform: uppercase;
   padding: 0;
@@ -2726,7 +2602,7 @@ border-radius: 4px;
   margin: 0;
   background-color: rgba(242, 242, 242, 1);
   font-weight: 700;
-  font-family: 'PT SANS';
+  font-family: "PT Sans", sans-serif;
   text-align: center;
   text-transform: uppercase;
 }
@@ -2740,7 +2616,7 @@ border-radius: 4px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  font-family: 'PT SANS';
+  font-family: "PT Sans", sans-serif;
   border-radius: 5px;
   border: none;
   margin-top: 37px;
@@ -2754,27 +2630,13 @@ border-radius: 4px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  font-family: 'PT SANS';
+  font-family: "PT Sans", sans-serif;
   border-radius: 5px;
   border: none;
   margin-left: 88px;
   margin-top: 36px;
   padding: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .field-group-uzer-i {
   display: flex;
   position: relative;
@@ -2782,7 +2644,7 @@ border-radius: 4px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  font-family: 'PT SANS';
+  font-family: "PT Sans", sans-serif;
   width: 110px;
   margin: 0;
   padding: 0;
@@ -2795,17 +2657,11 @@ border-radius: 4px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  font-family: 'PT SANS';
+  font-family: "PT Sans", sans-serif;
   width: 110px;
   margin: 0;
   padding: 0;
 }
-
-
-
-
-
-
 
 
 .informational text {
@@ -2841,10 +2697,6 @@ border-radius: 4px;
   background: #000000;
 
 }
-
-
-
-
 
 .text_center {
   text-align: left;
@@ -2914,6 +2766,6 @@ border-radius: 4px;
 }
 
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
 }
